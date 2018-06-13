@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/aws/aws-lambda-go/lambda"
+	"os"
 )
 
 type Response struct {
@@ -9,10 +10,17 @@ type Response struct {
 }
 
 func Handler() (Response, error) {
+	reqId, err := SendGenieAlert(os.Getenv("TEAM_NAME"), os.Getenv("TEAM_ID"))
+	if err != nil {
+		return Response{
+			Message: "Something went wrong " + err.Error(),
+		}, err
+	} else {
+		return Response{
+			Message: "Alert Dispatched with ID: " + reqId,
+		}, nil
+	}
 
-	return Response{
-		Message: "Your function executed successfully!",
-	}, nil
 }
 
 func main() {
