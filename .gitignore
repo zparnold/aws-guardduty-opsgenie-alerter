@@ -6,3 +6,5 @@ bin
 
 # golang vendor (dependencies) directory
 vendor
+
+.idea

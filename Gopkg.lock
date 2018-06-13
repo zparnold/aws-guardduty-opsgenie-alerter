@@ -11,9 +11,51 @@
   revision = "6e2e37798efbb1dfd8e9c6681702e683a6046517"
   version = "v1.0.1"
 
+[[projects]]
+  name = "github.com/cihub/seelog"
+  packages = ["."]
+  revision = "d2c6e5aa9fbfdd1c624e140287063c7730654115"
+  version = "v2.6"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/franela/goreq"
+  packages = ["."]
+  revision = "bcd34c9993f899273c74baaa95e15386cd97b6e7"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/google/go-querystring"
+  packages = ["query"]
+  revision = "53e6ce116135b80d037921a7fdd5138cf32d7a8a"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/opsgenie/opsgenie-go-sdk"
+  packages = [
+    "alerts",
+    "alertsv2",
+    "alertsv2/savedsearches",
+    "client",
+    "contact",
+    "escalation",
+    "heartbeat",
+    "integration",
+    "logging",
+    "notificationv2",
+    "policy",
+    "schedule",
+    "scheduleoverride",
+    "schedulev2",
+    "team",
+    "user",
+    "userv2"
+  ]
+  revision = "e5f3103b77a51ce247f876687dc717e81722fece"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "85fa166cc59d0fa113a1517ffbb5dee0f1fa4a6795239936afb18c64364af759"
+  inputs-digest = "72f08c47d43d91279bc3884648419383f411145f34e8b8a20afaad17ec93fefd"
   solver-name = "gps-cdcl"
   solver-version = 1
