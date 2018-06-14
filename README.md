@@ -30,7 +30,7 @@ rule you just created in Step 4 (https://console.aws.amazon.com/lambda/home)
 6) In the "Add Triggers" section of the Lambda console, select the "CloudWatch Events" tab
 7) In the "Configure Triggers" box underneath "Rule" select our newly created rule (Above called "GuardDuty")
 8) Make sure the "Enable Trigger" box is selected and then click the "Add" button
-
+9) Finally click the "Save" button in the top right hand corner of the dashboard
 
 ## GuardDuty Severity Levels
 *https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html#guardduty_findings-severity*
